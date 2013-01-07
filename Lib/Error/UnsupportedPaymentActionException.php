@@ -1,4 +1,5 @@
 <?php
+App::uses('PaymentException', 'Payments.Lib/Error');
 /**
  * UnsupportedPaymentActionException
  *
@@ -8,6 +9,6 @@
  * @copyright 2012 Florian Krämer
  * @license MIT
  */
-class UnsupportedPaymentActionException extends Exception {
+class UnsupportedPaymentActionException extends PaymentException {
 
 }

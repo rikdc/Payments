@@ -1,4 +1,5 @@
 <?php
+App::uses('PaymentException', 'Payments.Lib/Error');
 /**
  * PaymentProcessorException
  *
@@ -6,6 +7,6 @@
  * @copyright 2012 Florian Krämer
  * @license MIT
  */
-class PaymentProcessorException extends CakeException {
+class PaymentProcessorException extends PaymentException {
 	
 }

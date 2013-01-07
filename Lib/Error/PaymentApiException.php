@@ -1,4 +1,5 @@
 <?php
+App::uses('PaymentException', 'Payments.Lib/Error');
 /**
  * PaymentApiException
  *
@@ -6,7 +7,7 @@
  * @copyright 2012 Florian Krämer
  * @license MIT
  */
-class PaymentApiException extends CakeException {
+class PaymentApiException extends PaymentException {
 
 	public $apiErrorCode = null;
 	public $apiErrorMessage = null;
